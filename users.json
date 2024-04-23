@@ -1,0 +1,18 @@
+{
+    "users": [
+        {
+            "first_name": "Bohdan",
+            "last_name": "Kukuruza",
+            "password": "ghg",
+            "balance": 0.0,
+            "id": 1
+        },
+        {
+            "first_name": "Bohdan",
+            "last_name": "Kukuruza",
+            "password": "Kukuruza",
+            "balance": 0.0,
+            "id": 2
+        }
+    ]
+}

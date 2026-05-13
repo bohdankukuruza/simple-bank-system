@@ -71,10 +71,15 @@ After login, the user can choose from:
 5. Calculate interest
 6. Statement
 7. Quit
+```
 
-These options are handled in the main application loop in main.py.
+These options are handled in the main application loop in `main.py`.
 
-🏗 Project Structure
+---
+
+## 🏗 Project Structure
+
+```text
 simple-bank-system/
 │
 ├── main.py               # CLI interface and application flow
@@ -82,48 +87,86 @@ simple-bank-system/
 ├── users.json            # Local JSON data storage for users
 ├── requirements.txt      # Project dependencies
 └── README.md
-🔍 File Breakdown
-main.py
+```
+
+---
+
+## 🔍 File Breakdown
+
+### `main.py`
 
 Controls the overall user experience:
 
-application startup;
-login and registration menu;
-banking options menu;
-formatted success and error messages;
-terminal clearing;
-exit flow.
-AccountManager.py
+- application startup;
+- login and registration menu;
+- banking options menu;
+- formatted success and error messages;
+- terminal clearing;
+- exit flow.
+
+### `AccountManager.py`
 
 Handles the underlying account operations:
 
-loading users from JSON;
-user registration;
-authentication;
-deposits;
-withdrawals;
-password changes;
-interest calculations.
-users.json
+- loading users from JSON;
+- user registration;
+- authentication;
+- deposits;
+- withdrawals;
+- password changes;
+- interest calculations.
 
-Stores account records locally in JSON format.
+### `users.json`
+
+Stores account records locally in JSON format.  
 The application reads and writes user data from this file whenever account details are created or updated.
 
-⚙️ Setup
-1. Clone the repository
+---
+
+## ⚙️ Setup
+
+### 1. Clone the repository
+
+```bash
 git clone https://github.com/bohdankukuruza/simple-bank-system.git
 cd simple-bank-system
-2. Create a virtual environment
+```
+
+### 2. Create a virtual environment
+
+```bash
 python -m venv venv
-Windows
+```
+
+#### Windows
+
+```bash
 venv\Scripts\activate
-macOS / Linux
+```
+
+#### macOS / Linux
+
+```bash
 source venv/bin/activate
-3. Install dependencies
+```
+
+### 3. Install dependencies
+
+```bash
 pip install -r requirements.txt
-4. Run the application
+```
+
+### 4. Run the application
+
+```bash
 python main.py
-🧪 Example Workflow
+```
+
+---
+
+## 🧪 Example Workflow
+
+```text
 1. Register a new user
 2. Log in with the generated default password
 3. Change the password
@@ -131,40 +174,59 @@ python main.py
 5. Withdraw part of the balance
 6. Calculate projected monthly interest
 7. View the final account statement
-💾 Data Storage
+```
+
+---
+
+## 💾 Data Storage
 
 The project uses a local JSON file instead of a database.
 
 This makes the project lightweight and easy to run, while still demonstrating:
 
-file handling;
-persistent data updates;
-structured user records;
-simple account state management.
-🧰 Tech Stack
-Area	Technology
-Language	Python
-Interface	Command Line
-Data Storage	JSON
-Programming Style	Object-Oriented Programming
-Terminal Styling	Colorama
+- file handling;
+- persistent data updates;
+- structured user records;
+- simple account state management.
 
-The application uses colorama for colored terminal output.
+---
 
-🧭 Possible Improvements
-Replace JSON storage with SQLite or PostgreSQL
-Hash user passwords instead of storing them as plain text
-Add transaction history
-Add account transfer functionality
-Add unit tests
-Improve input validation
-Build a graphical or web-based interface
-👨‍💻 Author
+## 🧰 Tech Stack
 
-Bohdan Kukuruza
+| Area | Technology |
+|---|---|
+| Language | Python |
+| Interface | Command Line |
+| Data Storage | JSON |
+| Programming Style | Object-Oriented Programming |
+| Terminal Styling | Colorama |
+
+The application uses `colorama` for colored terminal output.
+
+---
+
+## 🧭 Possible Improvements
+
+- Replace JSON storage with SQLite or PostgreSQL
+- Hash user passwords instead of storing them as plain text
+- Add transaction history
+- Add account transfer functionality
+- Add unit tests
+- Improve input validation
+- Build a graphical or web-based interface
+
+---
+
+## 👨‍💻 Author
+
+**Bohdan Kukuruza**
+
+---
 
 <div align="center">
 
 ⭐ If you found this project useful, feel free to star the repository.
 
-</div> ```
+</div>
+
+
